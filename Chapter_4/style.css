@@ -1,0 +1,82 @@
+/* Fonts */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #17072b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Layout */
+main {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+/* Welcome Section */
+.welcome {
+    width: 65%;
+}
+
+.welcome img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Line Up Sidebar */
+.lineup {
+    width: 35%;
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.lineup ul {
+    padding-left: 20px;
+}
+
+.lineup-images {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.lineup-images img {
+    width: 48%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #8c15e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
