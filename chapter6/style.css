@@ -1,0 +1,118 @@
+/* Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خطوط أنعم وأحدث */
+}
+
+/* خلفية متدرجة مريحة وعصرية */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
+    padding: 20px;
+}
+
+/* حاوية الحاسبة بلمسة زجاجية ناعمة */
+.calculator-box {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px); /* تأثير ضبابي خلف الحاوية */
+    -webkit-backdrop-filter: blur(10px);
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 20px; /* زوايا دائرية أكثر حداثة */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 
+                0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* حركة خفيفة عند تمرير الماوس فوق الحاسبة */
+.calculator-box:hover {
+    transform: translateY(-5px);
+}
+
+/* العنوان */
+.calculator-box h1 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
+}
+
+/* النصوص التوضيحية (Labels) */
+label {
+    display: block;
+    text-align: right; /* مجهز ليدعم اللغة العربية بشكل ممتاز */
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #546e7a;
+}
+
+/* حقول الإدخال */
+.input-field {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* تأثير احترافي عند الضغط على الحقل */
+.input-field:focus {
+    border-color: #4a90e2;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.15);
+    outline: none;
+}
+
+/* زر الحساب بتصميم جذاب وحركة ناعمة */
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+    transition: all 0.2s ease;
+}
+
+/* تأثير التمرير والضغط على الزر */
+button:hover {
+    background: linear-gradient(135deg, #357abd 0%, #296296 100%);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+    transform: scale(1.01);
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* صندوق النتيجة */
+#result {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f1f8ff;
+    border-left: 4px solid #4a90e2; /* خط جمالي جانبي للنتيجة */
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
